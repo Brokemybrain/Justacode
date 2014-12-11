@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+ 
+ 
+ 
+ 
+int main()
+{
+    char *input_text = "a";
+    char *output_text;
+    int count = 0;
+    for(int i=0; input_text[i] != 0; i++)
+    {
+        count++;
+    }
+    int input_text_lenght = count;
+    output_text = new char[input_text_lenght];
+    for(int k = 0; k < input_text_lenght; k++)
+    {
+        output_text[k] = input_text[k] + 7;
+    }
+    cout<<"input_text ... "<<input_text<<endl;
+ 
+    cout<<"output_text ... "<<output_text<<endl;
+    delete [] output_text;
+    return 0;
+}
